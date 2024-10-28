@@ -11,14 +11,20 @@ body {
 }
 
 .main-container {
-    width: 1280px;
+    width: 1200px;
     margin: 0 auto;
+}
+  
+  @media screen and (max-width: 1200px) {
+    .main-container {
+      width: 90%;
+    }
 }
 
 .navbar {
     margin-top: 20px;
     display: inline-flex;
-    gap: 320px;
+    gap: 250px;
     align-items: center;
 }
 
@@ -70,11 +76,11 @@ li a:hover{
   }
   
 
-.hero {
+.home {
     height: 500px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 10px;
+    gap: 50px;
     align-items: center;
 }
 
@@ -182,7 +188,7 @@ li a:hover{
     display: grid;
     /* grid-template-columns: 50% 50%; */
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 6rem;
+    gap: 1.5rem;
 }
 
 .card {
@@ -321,25 +327,20 @@ input[type=text], select, textarea {
     }
   }
 
+/* Footer Section */
 footer {
     margin-top: 200px;
-}
-
-.footer-container {
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem;
-    gap: 900px;
+    padding: 2rem 0;
     background-color: #1E40AF;
-}
-
-.icon-footer {
-    display: flex;
-}
-
-.icon-footer a svg {
-    transition: transform 0.3s, fill 0.3s;
-}
+    text-align: center;
+  }
+  
+  .footer-icons {
+    margin-bottom: 1rem;
+  }
+  
+  .footer-icons a {
+    margin: 0 0.5rem;
+  }
+  
 
